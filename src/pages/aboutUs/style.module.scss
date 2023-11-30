@@ -1,0 +1,19 @@
+@import "../colors/colors";
+
+.textDom {
+  margin-top: 100px;
+  padding: 20px;
+  font-family: cursive;
+
+  p {
+    color: $DeepSkyBlue;
+  }
+}
+
+h1 {
+  color: $color-blue;
+
+  &:hover {
+    color:$BlueViolet;
+  }
+}

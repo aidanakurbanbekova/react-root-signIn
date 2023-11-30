@@ -1,13 +1,17 @@
-import React from "react";
-import styles from "./style.module.css"
-const Home = () => {
-    return(
-        <div className={styles.text}>
-            React Hooks
-            Хуки позволяют использовать состояние и другие возможности React без написания классов.
+import React, {useState} from "react";
+import styles from "./style.module.scss"
 
-            Построение пользовательских хуков позволяет помещать логику компонента в повторно используемые функции.
+const Home = () => {
+    const [theme,setTheme] = useState('light')
+    return (
+        <div className={styles.text}>
+            <p>
+                <h1>React Hooks</h1>
+                React Hooks
+                Хуки позволяют использовать состояние и другие возможности React без написания классов.
+                Построение пользовательских хуков позволяет помещать логику компонента в повторно используемые функции.
+            </p>
         </div>
     )
 }
-export default  Home;
+export default Home;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./App.module.css"
+import styles from "./App.module.scss"
 import {Route, Link, Routes} from 'react-router-dom';
 import Home from './pages/home/index';
 import AboutUs from './pages/aboutUs/index';
@@ -26,7 +26,7 @@ const App = () => {
                 <Route path="/" element={<Home />}/>
                 <Route path="/signIn" element={<SignIn />}/>
                 <Route path="/aboutUs" element={<AboutUs />}/>
-                <Route path="/error" element={<NotFound />}/>
+                <Route path="/*" element={<NotFound />}/>
             </Routes>
         </div>
     );

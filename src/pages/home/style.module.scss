@@ -1,0 +1,27 @@
+@import "../colors/colors";
+
+@mixin circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: $lighterBlue;
+  opacity: 0.5;
+}
+.text {
+  margin-top: 100px;
+  padding: 20px;
+  font-family: cursive;
+  font-size: 20px;
+
+  p {
+    color: $DeepSkyBlue;
+  }
+}
+
+h1 {
+  color: $FloralWhite;
+
+  &:hover {
+    color:$DeepSkyBlue;
+  }
+}

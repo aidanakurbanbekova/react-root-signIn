@@ -1,0 +1,45 @@
+@import "../colors/colors";
+
+@mixin circle {
+    opacity: 0.45;
+
+
+}
+.signIn {
+    @include circle;
+    margin-top: 80px;
+    display: $flex;
+    justify-content: $justify;
+    align-items: $alignItems;
+    color: $lighterBlue;
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 15px;
+        border: 1px solid $Black;
+        border-radius: 5px;
+        input{
+            font-family: cursive;
+            margin: 5px 0px;
+            height: 35px;
+            padding: 7px;
+            border-radius: 5px;
+            border: none;
+        }
+    }
+}
+
+button{
+    font-family: cursive;
+    height: 30px;
+    border: none;
+    margin: 5px 0;
+    background-color: $blue ;
+    border-radius: 5px;
+    color:$FloralWhite ;
+    &:hover{
+        background-color: $lighterBlue ;
+        color:$color-blue ;
+    }
+}
